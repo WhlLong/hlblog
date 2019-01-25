@@ -117,7 +117,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="AQS之CLH同步队列">
 <meta property="og:url" content="www.hlblogs.com/2018/11/15/源码阅读/java/juc/AQS/AQS之CLH队列/index.html">
-<meta property="og:site_name" content="撸猫青年的博客">
+<meta property="og:site_name" content="撸猫青年的小窝">
 <meta property="og:description" content="在上一篇AQS简介中有提到过AQS内部提供了一个CLH(Craig, Landin, and Hagersten)同步队列，用于处理多线程同时获取状态时的排队和阻塞的逻辑。CLH同步队列是一个FIFO双向队列，在多线程竞争获取状态的情况下，将获取失败的线程及其等待状态等信息封装成节点加入到CLH队列中，并可能会使该节点阻塞起来。当持有同步状态的节点释放同步状态以后，会将其后继节点唤醒。CLH队列中">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://www.hlblogs.com/images/juc/CLH-Sync-Queue.png">
@@ -161,7 +161,7 @@
 
 
 
-  <title>AQS之CLH同步队列 | 撸猫青年的博客</title>
+  <title>AQS之CLH同步队列 | 撸猫青年的小窝</title>
   
 
 
@@ -195,12 +195,12 @@
     <div class="custom-logo-site-title">
       <a href="/hlblog/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">撸猫青年的博客</span>
+        <span class="site-title">撸猫青年的小窝</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">日拱一卒 功不唐捐</p>
       
   </div>
 
@@ -343,7 +343,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="撸猫青年的博客">
+      <meta itemprop="name" content="撸猫青年的小窝">
     </span>
 
     
@@ -554,7 +554,7 @@
               <img class="site-author-image" itemprop="image" src="https://avatars0.githubusercontent.com/u/17354339?s=460&v=4" alt="撸猫青年">
             
               <p class="site-author-name" itemprop="name">撸猫青年</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">94年 在上海工作 养猫 死宅</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -564,7 +564,7 @@
               
                 <a href="/hlblog/archives/">
               
-                  <span class="site-state-item-count">55</span>
+                  <span class="site-state-item-count">54</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1198,5 +1198,5 @@
 
 
 
-<script src="/hlblog/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/hlblog/live2dw/assets/izumi.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false,"scale":0.05},"log":false});</script></body>
+<script src="/hlblog/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/hlblog/live2dw/assets/Epsilon2.1.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":false,"scale":0.05},"log":false});</script></body>
 </html>

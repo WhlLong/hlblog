@@ -331,7 +331,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.hlblogs.com/hlblog/2018/11/27/数据结构与算法/散列表随记(writing)/">
+    <link itemprop="mainEntityOfPage" href="www.hlblogs.com/hlblog/2018/11/27/源码阅读/java/juc/ThreadLocal源码阅读笔记/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="撸猫青年">
@@ -350,7 +350,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/hlblog/2018/11/27/数据结构与算法/散列表随记(writing)/" itemprop="url">散列表</a></h1>
+                <a class="post-title-link" href="/hlblog/2018/11/27/源码阅读/java/juc/ThreadLocal源码阅读笔记/" itemprop="url">ThreadLocal源码阅读笔记</a></h1>
         
 
         <div class="post-meta">
@@ -385,8 +385,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/hlblog/categories/数据结构与算法/" itemprop="url" rel="index">
-                    <span itemprop="name">数据结构与算法</span>
+                  <a href="/hlblog/categories/java源码阅读笔记/" itemprop="url" rel="index">
+                    <span itemprop="name">java源码阅读笔记</span>
                   </a>
                 </span>
 
@@ -423,10 +423,10 @@
 
       
         
-          <p>散列表</p>
+          <p>参考资料<br><a href="https://www.jianshu.com/p/ee8c9dccc953" target="_blank" rel="noopener">https://www.jianshu.com/p/ee8c9dccc953</a><br><a href="https://www.jianshu.com/p/ee8c9dccc953" target="_blank" rel="noopener">https://www.jianshu.com/p/ee8c9dccc953</a></p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/hlblog/2018/11/27/数据结构与算法/散列表随记(writing)/#more" rel="contents">
+            <a class="btn" href="/hlblog/2018/11/27/源码阅读/java/juc/ThreadLocal源码阅读笔记/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -915,7 +915,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.hlblogs.com/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS简介/">
+    <link itemprop="mainEntityOfPage" href="www.hlblogs.com/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS之CLH队列/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="撸猫青年">
@@ -934,7 +934,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS简介/" itemprop="url">AQS简介</a></h1>
+                <a class="post-title-link" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS之CLH队列/" itemprop="url">AQS之CLH同步队列</a></h1>
         
 
         <div class="post-meta">
@@ -1007,11 +1007,10 @@
 
       
         
-          <p>AQS是什么？<br>AQS全称AbstractQueuedSynchronizer,jdk中对AQS的解释是<br><strong>Provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues.</strong><br>意思就是AQS它是一个依赖于先进先出队列(FIFO)的用于实现阻塞锁及相关同步器(信号量，事件等等)的框架。</p>
-<!-- ![图片](https://avatars0.githubusercontent.com/u/17354339?s=460&v=4) -->
+          <p>在上一篇<a href="http://localhost:4000/2018/11/15/juc/AQS%E7%AE%80%E4%BB%8B/#more" target="_blank" rel="noopener">AQS简介</a>中有提到过AQS内部提供了一个CLH(Craig, Landin, and Hagersten)同步队列，用于处理多线程同时获取状态时的排队和阻塞的逻辑。<br>CLH同步队列是一个FIFO双向队列，在多线程竞争获取状态的情况下，将获取失败的线程及其等待状态等信息封装成节点加入到CLH队列中，并可能会使该节点阻塞起来。当持有同步状态的节点释放同步状态以后，会将其后继节点唤醒。CLH队列中非阻塞状态的节点会判断自己的前置节点是否为头结点，如果前置节点是头结点，就会尝试获取同步状态。</p>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS简介/#more" rel="contents">
+            <a class="btn" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS之CLH队列/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1208,7 +1207,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="www.hlblogs.com/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS之CLH队列/">
+    <link itemprop="mainEntityOfPage" href="www.hlblogs.com/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS简介/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="撸猫青年">
@@ -1227,7 +1226,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS之CLH队列/" itemprop="url">AQS之CLH同步队列</a></h1>
+                <a class="post-title-link" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS简介/" itemprop="url">AQS简介</a></h1>
         
 
         <div class="post-meta">
@@ -1300,10 +1299,11 @@
 
       
         
-          <p>在上一篇<a href="http://localhost:4000/2018/11/15/juc/AQS%E7%AE%80%E4%BB%8B/#more" target="_blank" rel="noopener">AQS简介</a>中有提到过AQS内部提供了一个CLH(Craig, Landin, and Hagersten)同步队列，用于处理多线程同时获取状态时的排队和阻塞的逻辑。<br>CLH同步队列是一个FIFO双向队列，在多线程竞争获取状态的情况下，将获取失败的线程及其等待状态等信息封装成节点加入到CLH队列中，并可能会使该节点阻塞起来。当持有同步状态的节点释放同步状态以后，会将其后继节点唤醒。CLH队列中非阻塞状态的节点会判断自己的前置节点是否为头结点，如果前置节点是头结点，就会尝试获取同步状态。</p>
+          <p>AQS是什么？<br>AQS全称AbstractQueuedSynchronizer,jdk中对AQS的解释是<br><strong>Provides a framework for implementing blocking locks and related synchronizers (semaphores, events, etc) that rely on first-in-first-out (FIFO) wait queues.</strong><br>意思就是AQS它是一个依赖于先进先出队列(FIFO)的用于实现阻塞锁及相关同步器(信号量，事件等等)的框架。</p>
+<!-- ![图片](https://avatars0.githubusercontent.com/u/17354339?s=460&v=4) -->
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS之CLH队列/#more" rel="contents">
+            <a class="btn" href="/hlblog/2018/11/15/源码阅读/java/juc/AQS/AQS简介/#more" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
